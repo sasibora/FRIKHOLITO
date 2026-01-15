@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دورة صناعة فيديوهات AI الاحترافية | الشارع المغربي</title>
+    <meta name="description"
+        content="انضم إلى دورة الشارع المغربي لتعلم صناعة فيديوهات احترافية باستخدام أحدث تقنيات الذكاء الاصطناعي. من الفكرة إلى النشر، نغطي كل ما تحتاجه للنجاح.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frikholito.live">
+    <meta property="og:title" content="دورة صناعة فيديوهات AI الاحترافية | Frikholito ">
+    <meta property="og:description" content="تعلم صناعة فيديوهات احترافية باستخدام أحدث تقنيات الذكاء الاصطناعي.">
+    <meta property="og:image" content="https://dawra.live/app/1317.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://frikholito.live">
+    <meta property="twitter:title" content="دورة صناعة فيديوهات AI الاحترافية | Frikholito">
+    <meta property="twitter:description" content="تعلم صناعة فيديوهات احترافية باستخدام أحدث تقنيات الذكاء الاصطناعي.">
+    <meta property="twitter:image" content="https://dawra.live/app/1317.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-dark: #0a1628;
+            --secondary-burgundy: #0066CC;
+            --accent-gold: #00A8E8;
+            --accent-orange: #007EA7;
+            --accent-mocha: #003459;
+            --neutral-light: #f8f9fa;
+            --glass-bg: rgba(0, 102, 204, 0.05);
+            --glass-border: rgba(0, 168, 232, 0.1);
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #1a1a1a 100%);
+            color: var(--neutral-light);
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        html[lang="fr"] body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .text-brand-burgundy {
+            color: var(--secondary-burgundy);
+        }
+
+        .bg-brand-burgundy {
+            background-color: var(--secondary-burgundy);
+        }
+
+        .border-brand-burgundy {
+            border-color: var(--secondary-burgundy);
+        }
+
+        .shadow-brand-burgundy {
+            box-shadow: 0 0 25px rgba(139, 21, 56, 0.6);
+        }
+
+        .text-brand-gold {
+            color: var(--accent-gold);
+        }
+
+        .bg-brand-gold {
+            background-color: var(--accent-gold);
+        }
+
+        .border-brand-gold {
+            border-color: var(--accent-gold);
+        }
+
+        .shadow-brand-gold {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card-strong {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-asymmetric {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-burgundy) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-asymmetric::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 200%;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-orange));
+            opacity: 0.1;
+            transform: rotate(15deg);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .text-massive {
+            font-size: clamp(3rem, 7vw, 7rem);
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .text-oversized {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--secondary-burgundy) 0%, var(--accent-orange) 100%);
+            border: 2px solid var(--accent-gold);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--secondary-burgundy) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(139, 21, 56, 0.4);
+        }
+
+        .image-frame {
+            border-radius: 1.5rem;
+            background: var(--glass-bg);
+            border: 1px dashed var(--accent-gold);
+        }
+
+        @keyframes gradient-shift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .gradient-text {
+            background: linear-gradient(-45deg, var(--secondary-burgundy), var(--accent-gold), var(--accent-orange), var(--accent-mocha));
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            animation: gradient-shift 4s ease infinite;
+        }
+
+        .lang-btn {
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, var(--secondary-burgundy), var(--accent-orange));
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .faq-content.open {
+            max-height: 500px;
+            padding-top: 1rem;
+        }
+
+        .faq-icon.rotate-45 {
+            transform: rotate(45deg);
+        }
+
+        .modal-open {
+            overflow: hidden;
+        }
+
+        .form-input {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-input:focus {
+            border-color: var(--secondary-burgundy);
+            box-shadow: 0 0 0 2px rgba(139, 21, 56, 0.4);
+            outline: none;
+        }
+    </style>
+</head>
+
+<body class="scroll-smooth">
+
+    <!-- Navigation -->
+    <header class="glass-card-strong sticky top-0 z-50 border-b border-brand-gold/20">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="frikholito.live" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+                    <img src="https://dawra.live/app/1317.png" alt="شعار الشارع المغربي"
+                        class="w-12 h-12 rounded-full border-2 border-brand-gold"
+                        onerror="this.onerror=null;this.src='https://placehold.co/48x48/8B1538/ffffff?text=AI';">
+                    <h1 data-lang-key="brandName" class="text-xl font-bold text-white hidden sm:block"></h1>
+                </a>
+            </div>
+
+            <!-- Desktop Menu & Right-side controls -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#hero" data-lang-key="navHome" class="text-slate-300 hover:text-brand-gold transition"></a>
+                <a href="#features" data-lang-key="navCourse"
+                    class="text-slate-300 hover:text-brand-gold transition"></a>
+                <a href="#curriculum" data-lang-key="navCurriculum"
+                    class="text-slate-300 hover:text-brand-gold transition"></a>
+                <a href="#instructor" data-lang-key="navInstructor"
+                    class="text-slate-300 hover:text-brand-gold transition"></a>
+                <a href="#pricing" data-lang-key="navPricing"
+                    class="text-slate-300 hover:text-brand-gold transition"></a>
+                <a href="#knowledge-base" data-lang-key="navKnowledge"
+                    class="text-slate-300 hover:text-brand-gold transition"></a>
+            </div>
+            <div class="hidden md:flex items-center gap-3">
+                <div class="flex glass-card rounded-lg p-1">
+                    <button data-lang="fr"
+                        class="lang-btn text-slate-300 font-semibold py-2 px-4 rounded-lg">FR</button>
+                    <button data-lang="ar"
+                        class="lang-btn text-slate-300 font-semibold py-2 px-4 rounded-lg active">AR</button>
+                </div>
+                <a href="#pricing" data-lang-key="navStartNow"
+                    class="btn-primary text-white font-bold py-3 px-6 rounded-lg cta-btn"></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <div class="flex glass-card rounded-lg p-1 mr-4">
+                    <button data-lang="fr"
+                        class="lang-btn text-slate-300 font-semibold py-2 px-3 rounded-lg text-sm">FR</button>
+                    <button data-lang="ar"
+                        class="lang-btn text-slate-300 font-semibold py-2 px-3 rounded-lg text-sm active">AR</button>
+                </div>
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card-strong">
+            <div class="px-2 pt-2 pb-4 space-y-2 flex flex-col items-center">
+                <a href="#hero" data-lang-key="navHome"
+                    class="text-slate-300 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium"></a>
+                <a href="#features" data-lang-key="navCourse"
+                    class="text-slate-300 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium"></a>
+                <a href="#curriculum" data-lang-key="navCurriculum"
+                    class="text-slate-300 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium"></a>
+                <a href="#instructor" data-lang-key="navInstructor"
+                    class="text-slate-300 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium"></a>
+                <a href="#pricing" data-lang-key="navPricing"
+                    class="text-slate-300 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium"></a>
+                <a href="#knowledge-base" data-lang-key="navKnowledge"
+                    class="text-slate-300 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium"></a>
+                <a href="#pricing" data-lang-key="navStartNow"
+                    class="btn-primary text-white font-bold py-3 px-8 rounded-lg mt-4 cta-btn"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-asymmetric rounded-3xl my-8 py-16 sm:py-20 px-6 sm:px-8">
+            <div class="hero-content max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-center lg:text-right">
+                        <span data-lang-key="heroCertified"
+                            class="inline-block text-brand-gold font-bold bg-brand-burgundy/20 py-3 px-6 rounded-full border border-brand-gold"></span>
+                        <h1 data-lang-key="heroTitle" class="text-massive font-black"></h1>
+                        <p data-lang-key="heroSubtitle"
+                            class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed"></p>
+                        <div
+                            class="flex flex-wrap justify-center lg:justify-start items-center gap-6 sm:gap-8 text-slate-300">
+                            <span class="flex items-center gap-2"><i class="text-brand-gold"
+                                    data-lucide="users"></i><span data-lang-key="heroStudents"></span></span>
+                            <span class="flex items-center gap-2"><i class="text-brand-gold"
+                                    data-lucide="calendar-weeks"></i><span data-lang-key="heroWeeks"></span></span>
+                            <span class="flex items-center gap-2"><i class="text-brand-gold"
+                                    data-lucide="star"></i><span data-lang-key="heroRating"></span></span>
+                        </div>
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                            <a href="#pricing" data-lang-key="heroBtnStart"
+                                class="btn-primary text-white font-bold py-4 px-8 rounded-lg text-lg cta-btn"></a>
+                            <button
+                                class="glass-card text-white font-bold py-4 px-8 rounded-lg text-lg hover:border-brand-gold transition duration-300 flex items-center gap-3">
+                                <i data-lucide="play"></i> <span data-lang-key-inner="heroBtnWatch"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative image-frame aspect-video">
+                        <img src="https://dawra.live/app/1317.png" alt="AI Video Creation"
+                            class="w-full h-full object-cover rounded-2xl" onerror="this.style.display='none';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Offer Section -->
+        <section id="limited-offer" class="my-24 scroll-reveal">
+            <div
+                class="glass-card-strong max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl border-2 border-brand-burgundy shadow-brand-burgundy">
+                <h3 data-lang-key="offerTitle"
+                    class="text-2xl sm:text-3xl font-bold text-center text-white gradient-text"></h3>
+                <p data-lang-key="offerSubtitle" class="text-slate-300 mt-3 text-center text-base sm:text-lg"></p>
+                <div id="countdown" class="flex justify-center gap-2 sm:gap-4 md:gap-8 my-6 text-white">
+                    <div><span id="days" class="text-3xl sm:text-5xl font-bold text-brand-gold">00</span>
+                        <p data-lang-key="offerDays" class="text-xs sm:text-sm text-slate-400 text-center"></p>
+                    </div>
+                    <div class="text-3xl sm:text-5xl font-bold text-brand-gold">:</div>
+                    <div><span id="hours" class="text-3xl sm:text-5xl font-bold text-brand-gold">00</span>
+                        <p data-lang-key="offerHours" class="text-xs sm:text-sm text-slate-400 text-center"></p>
+                    </div>
+                    <div class="text-3xl sm:text-5xl font-bold text-brand-gold">:</div>
+                    <div><span id="minutes" class="text-3xl sm:text-5xl font-bold text-brand-gold">00</span>
+                        <p data-lang-key="offerMinutes" class="text-xs sm:text-sm text-slate-400 text-center"></p>
+                    </div>
+                    <div class="text-3xl sm:text-5xl font-bold text-brand-gold">:</div>
+                    <div><span id="seconds" class="text-3xl sm:text-5xl font-bold text-brand-gold">00</span>
+                        <p data-lang-key="offerSeconds" class="text-xs sm:text-sm text-slate-400 text-center"></p>
+                    </div>
+                </div>
+                <div class="w-full bg-slate-700 rounded-full h-2.5 mt-4">
+                    <div class="bg-gradient-to-r from-brand-burgundy to-brand-orange h-2.5 rounded-full"
+                        style="width: 90%"></div>
+                </div>
+                <p data-lang-key="offerSeats" class="text-sm text-slate-300 mt-3 text-center"></p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="my-24 scroll-reveal">
+            <div class="text-center mb-16">
+                <h2 data-lang-key="whyTitle" class="text-oversized font-black gradient-text mb-6"></h2>
+                <p data-lang-key="whySubtitle" class="text-xl text-slate-400 max-w-3xl mx-auto"></p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                <div class="glass-card p-6 rounded-2xl border-brand-gold border-t-2 card-hover"><i
+                        class="mx-auto text-brand-gold w-10 h-10 mb-3" data-lucide="play-circle"></i>
+                    <h3 data-lang-key="feature1" class="font-bold text-white"></h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-brand-gold border-t-2 card-hover"><i
+                        class="mx-auto text-brand-gold w-10 h-10 mb-3" data-lucide="lightbulb"></i>
+                    <h3 data-lang-key="feature2" class="font-bold text-white"></h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-brand-gold border-t-2 card-hover"><i
+                        class="mx-auto text-brand-gold w-10 h-10 mb-3" data-lucide="messages-square"></i>
+                    <h3 data-lang-key="feature3" class="font-bold text-white"></h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-brand-gold border-t-2 card-hover"><i
+                        class="mx-auto text-brand-gold w-10 h-10 mb-3" data-lucide="award"></i>
+                    <h3 data-lang-key="feature4" class="font-bold text-white"></h3>
+                </div>
+                <div
+                    class="glass-card p-6 rounded-2xl border-brand-gold border-t-2 card-hover col-span-2 md:col-span-1">
+                    <i class="mx-auto text-brand-gold w-10 h-10 mb-3" data-lucide="infinity"></i>
+                    <h3 data-lang-key="feature5" class="font-bold text-white"></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section id="curriculum" class="my-24 scroll-reveal">
+            <h2 data-lang-key="journeyTitle"
+                class="text-oversized font-bold text-center text-white mb-12 gradient-text"></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="glass-card p-8 rounded-2xl border-b-4 border-brand-burgundy card-hover"><i
+                        class="mx-auto text-brand-gold w-12 h-12 mb-4" data-lucide="book-open"></i>
+                    <h3 data-lang-key="journey1Title" class="text-2xl font-bold text-white mb-2"></h3>
+                    <p data-lang-key="journey1Desc" class="text-slate-400"></p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-b-4 border-brand-burgundy card-hover"><i
+                        class="mx-auto text-brand-gold w-12 h-12 mb-4" data-lucide="drafting-compass"></i>
+                    <h3 data-lang-key="journey2Title" class="text-2xl font-bold text-white mb-2"></h3>
+                    <p data-lang-key="journey2Desc" class="text-slate-400"></p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-b-4 border-brand-burgundy card-hover"><i
+                        class="mx-auto text-brand-gold w-12 h-12 mb-4" data-lucide="graduation-cap"></i>
+                    <h3 data-lang-key="journey3Title" class="text-2xl font-bold text-white mb-2"></h3>
+                    <p data-lang-key="journey3Desc" class="text-slate-400"></p>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="form/coursedetailes.html" data-lang-key="journeyBtn"
+                    class="btn-primary text-white font-bold py-3 px-8 rounded-lg text-lg"></a>
+            </div>
+        </section>
+
+        <!-- Instructor Section -->
+        <section id="instructor" class="my-24 scroll-reveal">
+            <div class="glass-card-strong rounded-3xl p-8 md:p-12">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 data-lang-key="instructorPhilosophy" class="text-oversized font-black gradient-text"></h2>
+                        <p data-lang-key="instructorQuote" class="text-xl text-slate-300 leading-relaxed"></p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div
+                                class="glass-card p-4 rounded-lg border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                                <h5 data-lang-key="instructorPillar1" class="font-bold text-white"></h5>
+                            </div>
+                            <div
+                                class="glass-card p-4 rounded-lg border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                                <h5 data-lang-key="instructorPillar2" class="font-bold text-white"></h5>
+                            </div>
+                            <div
+                                class="glass-card p-4 rounded-lg border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                                <h5 data-lang-key="instructorPillar3" class="font-bold text-white"></h5>
+                            </div>
+                            <div
+                                class="glass-card p-4 rounded-lg border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                                <h5 data-lang-key="instructorPillar4" class="font-bold text-white"></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative text-center">
+                        <img src="https://dawra.live/app/1317.png" alt="المدرب"
+                            class="w-48 h-48 sm:w-60 sm:h-60 mx-auto rounded-full object-cover border-4 border-brand-gold shadow-brand-gold"
+                            onerror="this.onerror=null;this.src='https://placehold.co/240x240/1f2937/D4AF37?text=Logo';">
+                        <h3 data-lang-key="instructorName" class="text-3xl font-bold text-white mt-4"></h3>
+                        <p data-lang-key="instructorTitle" class="text-brand-gold text-lg"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="my-24 scroll-reveal">
+            <div class="text-center mb-16">
+                <h2 data-lang-key="pricingTitle" class="text-oversized font-black gradient-text mb-6"></h2>
+            </div>
+            <div class="max-w-md mx-auto">
+                <div class="glass-card-strong p-8 rounded-2xl border-2 border-brand-gold shadow-brand-gold relative">
+                    <span data-lang-key="pricingTag"
+                        class="absolute -top-4 right-6 rtl:right-auto rtl:left-6 bg-brand-burgundy text-white text-sm font-bold px-4 py-1 rounded-full border border-brand-gold"></span>
+                    <h3 data-lang-key="pricingPackage" class="text-3xl font-bold text-white text-center"></h3>
+                    <p data-lang-key="pricingPrice"
+                        class="text-5xl sm:text-6xl font-black text-brand-gold my-6 text-center"></p>
+                    <ul class="space-y-4 text-slate-300 mb-8 text-lg">
+                        <li class="flex items-center gap-3"><i class="text-brand-gold w-6 h-6"
+                                data-lucide="check-circle"></i> <span data-lang-key="pricingFeature1"></span></li>
+                        <li class="flex items-center gap-3"><i class="text-brand-gold w-6 h-6"
+                                data-lucide="check-circle"></i> <span data-lang-key="pricingFeature2"></span></li>
+                        <li class="flex items-center gap-3"><i class="text-brand-gold w-6 h-6"
+                                data-lucide="check-circle"></i> <span data-lang-key="pricingFeature3"></span></li>
+                        <li class="flex items-center gap-3"><i class="text-brand-gold w-6 h-6"
+                                data-lucide="check-circle"></i> <span data-lang-key="pricingFeature4"></span></li>
+                        <li class="flex items-center gap-3"><i class="text-brand-gold w-6 h-6"
+                                data-lucide="check-circle"></i> <span data-lang-key="pricingFeature5"></span></li>
+                        <li class="flex items-center gap-3"><i class="text-brand-gold w-6 h-6"
+                                data-lucide="check-circle"></i> <span data-lang-key="pricingFeature6"></span></li>
+                    </ul>
+                    <button data-lang-key="pricingBtnBook"
+                        class="cta-btn w-full btn-primary text-white font-bold py-4 text-xl rounded-lg"></button>
+                    <a href="form/AIform.html" data-lang-key="pricingLinkRegister"
+                        class="block text-center mt-4 text-brand-gold hover:underline"></a>
+                </div>
+            </div>
+            <div class="text-center mt-12 glass-card max-w-2xl mx-auto p-6 rounded-2xl border border-brand-burgundy">
+                <h4 data-lang-key="guaranteeTitle" class="text-xl font-bold text-white"></h4>
+                <p data-lang-key="guaranteeDesc" class="text-slate-400 mt-2"></p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="my-24 scroll-reveal">
+            <div class="text-center mb-16">
+                <h2 data-lang-key="testimonialsTitle" class="text-oversized font-black gradient-text mb-6"></h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-6 rounded-2xl space-y-4 border-t-2 border-brand-gold">
+                    <p data-lang-key="testimonial1Quote" class="text-slate-300 mb-4"></p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop"
+                            alt="Testimonial" class="w-14 h-14 rounded-full object-cover border-2 border-brand-gold"
+                            onerror="this.onerror=null;this.src='https://placehold.co/56x56/8B1538/ffffff?text=ف';">
+                        <div>
+                            <h4 data-lang-key="testimonial1Name" class="font-bold text-white"></h4>
+                            <p data-lang-key="testimonial1Role" class="text-slate-400 text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl space-y-4 border-t-2 border-brand-gold">
+                    <p data-lang-key="testimonial2Quote" class="text-slate-300 mb-4"></p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1887&auto=format&fit=crop"
+                            alt="Testimonial" class="w-14 h-14 rounded-full object-cover border-2 border-brand-gold"
+                            onerror="this.onerror=null;this.src='https://placehold.co/56x56/8B1538/ffffff?text=م';">
+                        <div>
+                            <h4 data-lang-key="testimonial2Name" class="font-bold text-white"></h4>
+                            <p data-lang-key="testimonial2Role" class="text-slate-400 text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl space-y-4 border-t-2 border-brand-gold">
+                    <p data-lang-key="testimonial3Quote" class="text-slate-300 mb-4"></p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://www.acls.org/wp-content/uploads/2023/03/485652D3-1575-EA11-80F0-000C296A63B0.jpg"
+                            alt="Testimonial" class="w-14 h-14 rounded-full object-cover border-2 border-brand-gold"
+                            onerror="this.onerror=null;this.src='https://placehold.co/56x56/8B1538/ffffff?text=س';">
+                        <div>
+                            <h4 data-lang-key="testimonial3Name" class="font-bold text-white"></h4>
+                            <p data-lang-key="testimonial3Role" class="text-slate-400 text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="my-24 max-w-4xl mx-auto scroll-reveal">
+            <h2 data-lang-key="faqTitle" class="text-oversized font-bold text-center text-white mb-12 gradient-text">
+            </h2>
+            <div class="space-y-4">
+                <div
+                    class="faq-item glass-card rounded-xl p-6 cursor-pointer border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                    <div class="faq-question flex justify-between items-center font-bold text-lg text-white"><span
+                            data-lang-key="faq1q"></span><i data-lucide="plus"
+                            class="faq-icon transition-transform text-brand-gold"></i></div>
+                    <div class="faq-content text-slate-300 border-t border-slate-700 mt-4">
+                        <p data-lang-key="faq1a"></p>
+                    </div>
+                </div>
+                <div
+                    class="faq-item glass-card rounded-xl p-6 cursor-pointer border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                    <div class="faq-question flex justify-between items-center font-bold text-lg text-white"><span
+                            data-lang-key="faq2q"></span><i data-lucide="plus"
+                            class="faq-icon transition-transform text-brand-gold"></i></div>
+                    <div class="faq-content text-slate-300 border-t border-slate-700 mt-4">
+                        <p data-lang-key="faq2a"></p>
+                    </div>
+                </div>
+                <div
+                    class="faq-item glass-card rounded-xl p-6 cursor-pointer border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                    <div class="faq-question flex justify-between items-center font-bold text-lg text-white"><span
+                            data-lang-key="faq3q"></span><i data-lucide="plus"
+                            class="faq-icon transition-transform text-brand-gold"></i></div>
+                    <div class="faq-content text-slate-300 border-t border-slate-700 mt-4">
+                        <p data-lang-key="faq3a"></p>
+                    </div>
+                </div>
+                <div
+                    class="faq-item glass-card rounded-xl p-6 cursor-pointer border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                    <div class="faq-question flex justify-between items-center font-bold text-lg text-white"><span
+                            data-lang-key="faq4q"></span><i data-lucide="plus"
+                            class="faq-icon transition-transform text-brand-gold"></i></div>
+                    <div class="faq-content text-slate-300 border-t border-slate-700 mt-4">
+                        <p data-lang-key="faq4a"></p>
+                    </div>
+                </div>
+                <div
+                    class="faq-item glass-card rounded-xl p-6 cursor-pointer border-l-4 rtl:border-l-0 rtl:border-r-4 border-brand-gold">
+                    <div class="faq-question flex justify-between items-center font-bold text-lg text-white"><span
+                            data-lang-key="faq5q"></span><i data-lucide="plus"
+                            class="faq-icon transition-transform text-brand-gold"></i></div>
+                    <div class="faq-content text-slate-300 border-t border-slate-700 mt-4">
+                        <p data-lang-key="faq5a"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Knowledge Base Section -->
+        <section id="knowledge-base" class="my-24 scroll-reveal">
+            <h2 data-lang-key="knowledgeTitle"
+                class="text-oversized font-bold text-center text-white mb-12 gradient-text"></h2>
+            <div class="max-w-7xl mx-auto flex justify-center">
+                <a href="tools/Aicoursevideos.html"
+                    class="glass-card p-8 rounded-2xl border-brand-gold border-2 card-hover text-center block max-w-sm">
+                    <i data-lucide="video" class="mx-auto text-brand-gold w-16 h-16 mb-4"></i>
+                    <h3 data-lang-key="knowledge5Title" class="text-2xl font-bold text-white mb-2"></h3>
+                    <p data-lang-key="knowledge5Desc" class="text-slate-400"></p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="glass-card-strong mt-24 py-12 border-t border-brand-gold/20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h3 data-lang-key="brandName" class="text-xl font-bold text-brand-gold"></h3>
+                    <p data-lang-key="footerDesc" class="text-slate-400"></p>
+                </div>
+                <div class="space-y-4">
+                    <h4 data-lang-key="footerSupportTitle" class="text-lg font-bold text-white"></h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="http://wa.me/12342797741" data-lang-key="footerSupport1" target="_blank"
+                                class="hover:text-brand-gold transition"></a></li>
+                        <li><a href="#" data-lang-key="footerSupport2" class="hover:text-brand-gold transition"></a>
+                        </li>
+                        <li><a href="#knowledge-base" data-lang-key="footerSupport3"
+                                class="hover:text-brand-gold transition"></a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 data-lang-key="footerContactTitle" class="text-lg font-bold text-white"></h4>
+                    <p class="text-slate-400">contact@frikholito.live</p>
+                    <p class="text-slate-400">+39 346 661 7876</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
+                <p data-lang-key="footerCopyright" class="text-sm"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="registration-modal"
+        class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="glass-card-strong rounded-2xl shadow-2xl w-full max-w-lg relative" id="modal-content">
+            <button id="close-modal-btn"
+                class="absolute top-4 text-slate-400 hover:text-brand-gold ltr:right-4 rtl:left-4"><i data-lucide="x"
+                    class="w-6 h-6"></i></button>
+            <form action="https://formspree.io/f/xqabowdq" method="POST" id="registration-form" class="p-8" novalidate>
+                <h3 data-lang-key="modalTitle" class="text-3xl font-bold text-white text-center mb-2"></h3>
+                <p data-lang-key="modalSubtitle" class="text-slate-400 text-center mb-6"></p>
+                <div class="space-y-4">
+                    <div>
+                        <label for="full_name" data-lang-key="modalName"
+                            class="block text-sm font-bold text-slate-300 mb-2"></label>
+                        <input type="text" id="full_name" name="full_name" required
+                            class="w-full p-3 rounded-lg form-input transition">
+                    </div>
+                    <div>
+                        <label for="email" data-lang-key="modalEmail"
+                            class="block text-sm font-bold text-slate-300 mb-2"></label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full p-3 rounded-lg form-input transition">
+                    </div>
+                    <div>
+                        <label for="phone" data-lang-key="modalPhone"
+                            class="block text-sm font-bold text-slate-300 mb-2"></label>
+                        <input type="tel" id="phone" name="phone" required
+                            class="w-full p-3 rounded-lg form-input transition">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <button type="submit" data-lang-key="modalBtn"
+                        class="w-full btn-primary text-white font-bold py-3 text-lg rounded-lg"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // --- Translations Object ---
+        const translations = {
+            ar: {
+                brandName: "Frikholito",
+                navHome: "الرئيسية",
+                navCourse: "الدورة",
+                navCurriculum: "المنهج",
+                navInstructor: "المدرب",
+                navPricing: "الأسعار",
+                navKnowledge: "المعرفة",
+                navContact: "تواصل",
+                navStartNow: "ابدأ الآن",
+                heroCertified: "دورة معتمدة ومضمونة النتائج",
+                heroTitle: "صناعة فيديوهات <span class='gradient-text'>AI احترافية</span>",
+                heroSubtitle: "من الفكرة إلى النشر، تعلم كل أسرار صناعة المحتوى المرئي باستخدام أحدث تقنيات الذكاء الاصطناعي",
+                heroStudents: "+800 طالب",
+                heroWeeks: "4 أسابيع",
+                heroRating: "4.9/5 تقييم",
+                heroBtnStart: "ابدأ رحلتك الآن",
+                heroBtnWatch: "شاهد العرض التوضيحي",
+                offerTitle: "عرض محدود الوقت!",
+                offerSubtitle: "احجز مقعدك قبل انتهاء العرض الخاص. تبدأ الدورة في 22 يناير 2025.",
+                offerDays: "يوم",
+                offerHours: "ساعة",
+                offerMinutes: "دقيقة",
+                offerSeconds: "ثانية",
+                offerSeats: "المقاعد محدودة - فقط <span class='font-bold text-brand-gold'>50</span> مقعد متبقي!",
+                whyTitle: "لماذا تختار دورتنا؟",
+                whySubtitle: "نقدم لك تجربة تعليمية فريدة تجمع بين النظرية والتطبيق العملي لإتقان صناعة الفيديوهات بتقنيات الذكاء الاصطناعي.",
+                feature1: "12 لقاء تفاعلي",
+                feature2: "مشاريع حقيقية",
+                feature3: "دعم مباشر",
+                feature4: "شهادة إتمام",
+                feature5: "وصول مدى الحياة",
+                journeyTitle: "رحلة تعليمية متكاملة",
+                journey1Title: "تعلم النظريات",
+                journey1Desc: "فهم أساسيات الذكاء الاصطناعي وتطبيقاته في إنتاج الفيديو.",
+                journey2Title: "تطبيق عملي",
+                journey2Desc: "ممارسة الأدوات والتقنيات على مشاريع حقيقية.",
+                journey3Title: "إتقان المهارات",
+                journey3Desc: "إنتاج محتوى احترافي والحصول على شهادة معتمدة.",
+                journeyBtn: "عرض المنهج الدراسي الكامل",
+                instructorName: "Frikholito",
+                instructorTitle: "خبير تقنيات الذكاء الاصطناعي",
+                instructorPhilosophy: "تعرف على مدربك",
+                instructorQuote: "\"أؤمن بأن التعلم يجب أن يكون عملياً وممتعاً. هدفي ليس فقط تعليم التقنيات، بل إلهام الطلاب لإطلاق إبداعهم وتحويل أفكارهم إلى واقع ملموس.\"",
+                instructorPillar1: "التعلم العملي",
+                instructorPillar2: "الإبداع والابتكار",
+                instructorPillar3: "النتائج المضمونة",
+                instructorPillar4: "الدعم المستمر",
+                testimonialsTitle: "ماذا يقول طلابنا؟",
+                testimonial1Quote: "\"دورة رائعة غيرت مسار عملي بالكامل. تعلمت كيفية إنتاج فيديوهات احترافية في وقت قياسي.\"",
+                testimonial1Name: "فاطمة الزهراء",
+                testimonial1Role: "منتجة محتوى",
+                testimonial2Quote: "\"المدرب محترف جداً والمحتوى عملي ومفيد. أصبحت قادراً على إنتاج فيديوهات تسويقية احترافية لعملائي.\"",
+                testimonial2Name: "محمد الأمين",
+                testimonial2Role: "مصمم جرافيك",
+                testimonial3Quote: "\"الدورة ساعدتني في بناء علامتي التجارية وإنشاء محتوى مرئي جذاب لمنتجاتي. النتائج فاقت توقعاتي.\"",
+                testimonial3Name: "سارة الحسني",
+                testimonial3Role: "رائدة أعمال",
+                pricingTitle: "استثمارك في مستقبلك الإبداعي",
+                pricingTag: "عرض حصري",
+                pricingPackage: "الباقة المتكاملة",
+                pricingPrice: "35€<span class='text-lg text-slate-400'> / وصول مدى الحياة</span>",
+                pricingFeature1: "12 لقاء تفاعلي مباشر",
+                pricingFeature2: "جميع الدروس والمحتوى",
+                pricingFeature3: "مشاريع عملية تطبيقية",
+                pricingFeature4: "دعم مباشر من المدرب",
+                pricingFeature5: "وصول مدى الحياة للتسجيلات",
+                pricingFeature6: "تحديثات مجانية ومستمرة",
+                pricingBtnBook: "احجز مقعدك الآن",
+                pricingLinkRegister: "أو قم بالتسجيل الكامل هنا",
+                guaranteeTitle: "ضمان استرداد الأموال 100%",
+                guaranteeDesc: "نحن واثقون من جودة دورتنا. إذا لم تكن راضياً تماماً خلال أول 7 يوماً، سنعيد لك أموالك كاملة.",
+                faqTitle: "الأسئلة الشائعة",
+                faq1q: "هل الدورة مناسبة للمبتدئين تماماً؟",
+                faq1a: "نعم بالتأكيد. الدورة مصممة لتبدأ معك من الصفر. لا تحتاج لأي خبرة مسبقة في المونتاج أو التصميم.",
+                faq2q: "ما هي الأدوات التي سنتعلمها بالتحديد؟",
+                faq2a: "سنركز على الأدوات الأقوى والأكثر فعالية: ChatGPT لكتابة السكريبت، Midjourney و Leonardo AI لتوليد الصور، ElevenLabs للتعليق الصوتي، و CapCut للمونتاج النهائي.",
+                faq3q: "هل اللقاءات مباشرة أم مسجلة؟",
+                faq3a: "الدورة تتكون من 12 لقاء مباشر وتفاعلي مع المدرب لطرح الأسئلة والحصول على إجابات فورية. جميع اللقاءات يتم تسجيلها ويمكنك الوصول إليها مدى الحياة.",
+                faq4q: "هل أحتاج إلى كمبيوتر قوي؟",
+                faq4a: "لا. جميع الأدوات التي سنستخدمها هي أدوات سحابية (تعمل عبر الإنترنت)، لذلك لا تحتاج إلى جهاز كمبيوتر بمواصفات خارقة. أي جهاز كمبيوتر حديث سيكون كافياً.",
+                faq5q: "ماذا لو فاتني أحد اللقاءات المباشرة؟",
+                faq5a: "لا تقلق. يتم تسجيل جميع اللقاءات المباشرة وإتاحتها على منصة الدورة في اليوم التالي مباشرة، مع وصول مدى الحياة.",
+                knowledgeTitle: "قاعدة المعرفة",
+                knowledge1Title: "بنك الأنماط",
+                knowledge1Desc: "استكشف وانسخ أنماطًا فنية متنوعة لتوليد صور فريدة ومذهلة.",
+                knowledge2Title: "بنك الأوامر",
+                knowledge2Desc: "مجموعة شاملة من الأوامر (Prompts) موجهة خصيصًا لصناع المحتوى.",
+                knowledge3Title: "بنك الأدوات",
+                knowledge3Desc: "دليل شامل لأدوات الذكاء الاصطناعي، يتيح لك استكشاف أفضل الأدوات لمشاريعك.",
+                knowledge4Title: "بنك التمارين",
+                knowledge4Desc: "تمارين عملية لتطبيق ما تعلمته في الدورة وترسيخ المهارات.",
+                knowledge5Title: "تسجيلات الدورة",
+                knowledge5Desc: "شاهد تسجيلات جميع اللقاءات المباشرة هنا.",
+                footerDesc: "نهدف إلى تمكين الشباب العربي من إتقان أحدث التقنيات الرقمية وتطوير مهاراتهم في مجال إنتاج المحتوى.",
+                footerSupportTitle: "خيارات الدعم",
+                footerSupport1: "دعم فوري (واتساب)",
+                footerSupport2: "احجز مكالمة مجانية",
+                footerSupport3: "قاعدة المعرفة",
+                footerContactTitle: "تواصل معنا",
+                footerCopyright: `&copy; 2025 <a href="https://FRIKHOLITO.live" target="_blank" class="gradient-text font-bold">الشارع المغربي</a>. جميع الحقوق محفوظة.`,
+                modalTitle: "سجل اهتمامك الآن",
+                modalSubtitle: "املأ الاستمارة وسنتواصل معك لتأكيد تسجيلك.",
+                modalName: "الاسم الكامل",
+                modalEmail: "البريد الإلكتروني",
+                modalPhone: "رقم الهاتف (مع رمز الدولة)",
+                modalBtn: "إرسال",
+            },
+            fr: {
+                brandName: "الشارع المغربي",
+                navHome: "Accueil",
+                navCourse: "Le Cours",
+                navCurriculum: "Programme",
+                navInstructor: "Instructeur",
+                navPricing: "Tarifs",
+                navKnowledge: "Ressources",
+                navContact: "Contact",
+                navStartNow: "Commencer",
+                heroCertified: "Formation certifiée, résultats garantis",
+                heroTitle: "Création de Vidéos <span class='gradient-text'>Pro avec l'IA</span>",
+                heroSubtitle: "De l'idée à la publication, apprenez tous les secrets de la création de contenu visuel en utilisant les dernières technologies d'IA.",
+                heroStudents: "+800 étudiants",
+                heroWeeks: "4 semaines",
+                heroRating: "Évaluation 4.9/5",
+                heroBtnStart: "Commencez votre voyage",
+                heroBtnWatch: "Voir la démo",
+                offerTitle: "Offre à durée limitée !",
+                offerSubtitle: "Réservez votre place avant la fin de l'offre. Le cours commence le 22 janvier 2025.",
+                offerDays: "Jours",
+                offerHours: "Heures",
+                offerMinutes: "Min",
+                offerSeconds: "Sec",
+                offerSeats: "Places limitées - plus que <span class='font-bold text-brand-gold'>50</span> places disponibles !",
+                whyTitle: "Pourquoi choisir notre cours ?",
+                whySubtitle: "Nous vous offrons une expérience d'apprentissage unique qui combine théorie et application pratique pour maîtriser la création de vidéos avec l'IA.",
+                feature1: "12 sessions interactives",
+                feature2: "Projets réels",
+                feature3: "Support direct",
+                feature4: "Certificat",
+                feature5: "Accès à vie",
+                journeyTitle: "Un parcours d'apprentissage complet",
+                journey1Title: "Apprendre la Théorie",
+                journey1Desc: "Comprendre les bases de l'IA et ses applications dans la production vidéo.",
+                journey2Title: "Application Pratique",
+                journey2Desc: "Pratiquer avec les outils et techniques sur des projets réels.",
+                journey3Title: "Maîtriser les Compétences",
+                journey3Desc: "Produire du contenu professionnel et obtenir une certification.",
+                journeyBtn: "Voir le Programme Complet",
+                instructorName: "Frikholito",
+                instructorTitle: "Expert en technologies d'IA",
+                instructorPhilosophy: "Rencontrez votre instructeur",
+                instructorQuote: "\"Je crois que l'apprentissage doit être pratique et amusant. Mon but n'est pas seulement d'enseigner des techniques, mais d'inspirer les étudiants à libérer leur créativité.\"",
+                instructorPillar1: "Apprentissage pratique",
+                instructorPillar2: "Créativité & Innovation",
+                instructorPillar3: "Résultats garantis",
+                instructorPillar4: "Support continu",
+                testimonialsTitle: "Ce que disent nos étudiants",
+                testimonial1Quote: "\"Un cours incroyable qui a complètement changé ma carrière. J'ai appris à produire des vidéos professionnelles en un temps record.\"",
+                testimonial1Name: "Fatima Ezzahra",
+                testimonial1Role: "Créatrice de contenu",
+                testimonial2Quote: "\"L'instructeur est très professionnel et le contenu est pratique. Je peux maintenant produire des vidéos marketing pour mes clients.\"",
+                testimonial2Name: "Mohammed Al-Amine",
+                testimonial2Role: "Graphiste",
+                testimonial3Quote: "\"Ce cours m'a aidé à construire ma marque et à créer un contenu visuel attrayant pour mes produits. Les résultats ont dépassé mes attentes.\"",
+                testimonial3Name: "Sara El Hassani",
+                testimonial3Role: "Entrepreneure",
+                pricingTitle: "Votre investissement dans votre avenir créatif",
+                pricingTag: "Offre Exclusive",
+                pricingPackage: "Le Forfait Complet",
+                pricingPrice: "35€<span class='text-lg text-slate-400'> / accès à vie</span>",
+                pricingFeature1: "12 sessions interactives en direct",
+                pricingFeature2: "Toutes les leçons et contenus",
+                pricingFeature3: "Projets pratiques et applicatifs",
+                pricingFeature4: "Support direct de l'instructeur",
+                pricingFeature5: "Accès à vie aux enregistrements",
+                pricingFeature6: "Mises à jour gratuites et continues",
+                pricingBtnBook: "Réservez votre place",
+                pricingLinkRegister: "Ou inscription complète ici",
+                guaranteeTitle: "Garantie de remboursement à 100%",
+                guaranteeDesc: "Nous sommes confiants dans la qualité de notre cours. Si vous n'êtes pas entièrement satisfait dans les 7 premiers jours, nous vous rembourserons intégralement.",
+                faqTitle: "Questions Fréquemment Posées",
+                faq1q: "Le cours est-il adapté aux débutants complets ?",
+                faq1a: "Oui, absolument. Le cours est conçu pour vous prendre de zéro. Aucune expérience préalable en montage ou en design n'est requise.",
+                faq2q: "Quels outils allons-nous apprendre exactement ?",
+                faq2a: "Nous nous concentrerons sur les outils les plus puissants : ChatGPT pour les scripts, Midjourney et Leonardo AI pour les images, ElevenLabs pour la voix off et CapCut pour le montage final.",
+                faq3q: "Les sessions sont-elles en direct ou enregistrées ?",
+                faq3a: "Le cours comprend 12 sessions interactives en direct. Toutes les sessions sont enregistrées et disponibles à vie.",
+                faq4q: "Ai-je besoin d'un ordinateur puissant ?",
+                faq4a: "Non. Tous les outils que nous utiliserons sont basés sur le cloud, donc aucun ordinateur ultra-performant n'est nécessaire.",
+                faq5q: "Que se passe-t-il si je manque une session en direct ?",
+                faq5a: "Ne vous inquiétez pas. Toutes les sessions sont enregistrées et mises à votre disposition sur la plateforme de cours le lendemain, avec un accès à vie.",
+                knowledgeTitle: "Ressources",
+                knowledge1Title: "Banque de Styles",
+                knowledge1Desc: "Explorez et copiez divers styles artistiques pour générer des images uniques et époustouflantes.",
+                knowledge2Title: "Banque de Prompts",
+                knowledge2Desc: "Une collection complète de prompts spécialement conçus pour les créateurs de contenu.",
+                knowledge3Title: "Annuaire d'Outils IA",
+                knowledge3Desc: "Un guide complet des outils d'IA pour explorer les meilleures options pour vos projets.",
+                knowledge4Title: "Banque d'Exercices",
+                knowledge4Desc: "Des exercices pratiques pour appliquer ce que vous avez appris et renforcer vos compétences.",
+                knowledge5Title: "Enregistrements du Cours",
+                knowledge5Desc: "Regardez les enregistrements de toutes les sessions en direct ici.",
+                footerDesc: "Notre objectif est de permettre à la jeunesse arabe de maîtriser les dernières technologies numériques et de développer leurs compétences en création de contenu.",
+                footerSupportTitle: "Options de Support",
+                footerSupport1: "Support instantané (WhatsApp)",
+                footerSupport2: "Réserver un appel gratuit",
+                footerSupport3: "Base de connaissances",
+                footerContactTitle: "Contactez-nous",
+                footerCopyright: `&copy; 2025 <a href="https://FRIKHOLITO.live" target="_blank" class="gradient-text font-bold">الشارع المغربي</a>. Tous droits réservés.`,
+                modalTitle: "Inscrivez votre intérêt",
+                modalSubtitle: "Remplissez le formulaire et nous vous contacterons pour confirmer.",
+                modalName: "Nom complet",
+                modalEmail: "Adresse e-mail",
+                modalPhone: "Numéro de téléphone",
+                modalBtn: "Envoyer",
+            }
+        };
+
+        let currentLang = 'ar';
+
+        const setLanguage = (lang) => {
+            currentLang = lang;
+            const isAr = lang === 'ar';
+            document.documentElement.lang = lang;
+            document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+            document.body.style.fontFamily = isAr ? "'Tajawal', sans-serif" : "'Inter', sans-serif";
+
+            document.querySelectorAll('[data-lang-key]').forEach(elem => {
+                const key = elem.dataset.langKey;
+                if (translations[lang][key]) {
+                    if (['heroTitle', 'pricingPrice', 'offerSeats', 'footerCopyright'].includes(key)) {
+                        elem.innerHTML = translations[lang][key];
+                    } else {
+                        elem.textContent = translations[lang][key];
+                    }
+                }
+            });
+
+            const watchBtnInner = document.querySelector('[data-lang-key-inner="heroBtnWatch"]');
+            if (watchBtnInner) watchBtnInner.textContent = translations[lang].heroBtnWatch;
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+        };
+
+        document.querySelectorAll('.lang-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const lang = e.target.dataset.lang;
+                setLanguage(lang);
+            });
+        });
+
+        lucide.createIcons();
+        setLanguage(currentLang);
+
+        // Countdown Timer - Course starts January 22, 2026
+        const countdownDate = new Date("January 22, 2026 00:00:00").getTime();
+        const countdownElement = document.getElementById('countdown');
+        if (countdownElement) {
+            const interval = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = `<p class='text-xl font-bold text-brand-gold'>${currentLang === 'ar' ? 'انتهى العرض!' : 'Offre terminée !'}</p>`;
+                    return;
+                }
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById('days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const content = item.querySelector('.faq-content');
+                const icon = item.querySelector('.faq-icon');
+                content.classList.toggle('open');
+                icon.classList.toggle('rotate-45');
+            });
+        });
+
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Modal Logic
+        const modal = document.getElementById('registration-modal');
+        const openModalBtns = document.querySelectorAll('.cta-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const openModal = () => {
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.classList.add('modal-open');
+            }
+        };
+        const closeModal = () => {
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.classList.remove('modal-open');
+            }
+        };
+        openModalBtns.forEach(btn => btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const href = e.currentTarget.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            openModal();
+        }));
+        if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+        if (modal) modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Prevent default for internal links, but not for buttons that open modal
+                if (!e.currentTarget.classList.contains('cta-btn')) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Disable right-click
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+    </script>
+</body>
+
+</html>
